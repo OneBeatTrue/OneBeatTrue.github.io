@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'TTTravels';
+    src:    url('fonts/TTTravelsRegular.ttf') format('truetype'),
+            url('fonts/TTTravelsItalic.ttf') format('truetype'),
+            url('fonts/TTTravelsBold.ttf') format('truetype'),
+            url('fonts/TTTravelsDemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TTTravelDemiBold';
+    src: url('fonts/TTTravelsDemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(105, 105, 105, 0.1);
+    /*background-color: rgba(0, 230, 95, 0.1);*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: TTTravels, sans-serif;
+    margin: 0;
+    padding: 5vh;
+}
+
+footer {
+    font-family: 'TTTravels', sans-serif;
+    margin: 0;
+    padding: 5vh;
+    text-align: right;
+}
+
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    border-radius: 0 0 0 0;
+    padding: 0;
+    margin-bottom: 0;
+    transition: all 0.5s ease;
+}
+
+#logo img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+#main-nav {
+    background-color: white;
+    height: 8vh;
+    padding: 1vh;
+    transition: top 0.3s;
+    border-radius: 6vh;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
+}
+
+#main-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-menu {
+    font-family: TTTravelDemiBold, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-menu li {
+    display: inline-block;
+    padding: 2vh 4vh;
+    height: 50%;
+    border-radius: 4vh;
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+    margin-right: 5vh;
+    background-color: rgb(105, 105, 105);
+}
+
+.horizontal-menu li:last-child {
+    margin-right: 1vh;
+}
+
+.horizontal-menu li:hover {
+    background-color: rgba(0, 230, 95);
+    box-shadow: 0 0 6vh rgba(0, 230, 95, 0.5);
+}
+
+.horizontal-menu a {
+    text-decoration: none;
+    font-size: 3vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.information-block {
+    background-color: white;
+    border-radius: 6vh;
+    padding: 5vh;
+    margin: 5vh 0;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
+}
+
+.information-block h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(0, 230, 95);
+}
+
+.information-block h2:first-child {
+    margin-top: 0;
+}
+
+.information-block p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(105, 105, 105);
+}
+
+.information-block strong {
+    font-weight: bold;
+    color: rgba(0, 230, 95, 1);
+}
+
+.information-block blockquote {
+    text-align: right;
+}
