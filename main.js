@@ -16,5 +16,5 @@ window.onload = function() {
         logoImg.style.height = '60vh';
 
         html.style.overflowY = 'auto';
-    }, 1000);
+    }, 500);
 };

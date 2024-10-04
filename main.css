@@ -6,17 +6,9 @@
             url('fonts/TTTravelsDemiBold.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'TTTravelDemiBold';
-    src: url('fonts/TTTravelsDemiBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
 html {
     scroll-behavior: smooth;
     background-color: rgb(105, 105, 105, 0.1);
-    /*background-color: rgba(0, 230, 95, 0.1);*/
     overflow-x: hidden;
     overflow-y: hidden;
     transition: all 0.5s ease;
@@ -74,7 +66,6 @@ footer {
 }
 
 .horizontal-menu {
-    font-family: TTTravelDemiBold, sans-serif;
     padding: 0;
     margin: 0;
     height: 100%;
@@ -104,6 +95,7 @@ footer {
 }
 
 .horizontal-menu a {
+    font-weight: bold;
     text-decoration: none;
     font-size: 3vh;
     color: white;
@@ -140,9 +132,21 @@ footer {
 
 .information-block strong {
     font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-transform: uppercase;
     color: rgba(0, 230, 95, 1);
 }
 
 .information-block blockquote {
     text-align: right;
+}
+
+.information-block pre {
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    background-color: rgb(105, 105, 105, 0.1);
+    padding: 10px;
+    border: 1px solid black;
+    overflow-x: scroll;
 }
