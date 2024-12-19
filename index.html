@@ -11,113 +11,148 @@
 </head>
 <body>
 
-<header>
-    <div id="logo">
-        <img src="newlogo.png" alt="CARe">
+<header class="header">
+    <div class="header__logo">
+        <div class="logo">
+            <img class="logo__img" src="newlogo.png" alt="CARe">
+        </div>
     </div>
-    <nav id="main-nav">
-        <ul class="horizontal-menu">
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#staff">Сотрудники</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-            <li><a href="#art">Искусство</a></li>
-            <li><a href="#api">API</a></li>
-        </ul>
+    <nav class="header__nav">
+        <nav class="nav">
+            <div class="nav__menu">
+                <ul class="menu menu_horizontal">
+                    <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#services">Услуги</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#staff">Сотрудники</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#art">Искусство</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#api">API</a></li>
+                </ul>
+            </div>
+        </nav>
     </nav>
 </header>
 
-<main>
-    <section id="about" class="information-block">
-        <h2>О нас</h2>
-        <blockquote>
-            <p>Заботитесь о природе? Мы позаботимся о Вашем автомобиле!</p>
-            <cite>OneBeatTrue</cite>
+<main class="main">
+    <section class="section section_titled-about" id="about">
+        <h2 class="section__title">О нас</h2>
+        <blockquote class="section__quote">
+            <p class="section__text">Заботитесь о природе? Мы позаботимся о Вашем автомобиле!</p>
+            <cite class="section__cite">OneBeatTrue</cite>
         </blockquote>
-        <article>
-            <p>Наша автомастерская была основана в ответ на быстрорастущую популярность электромобилей и необходимость предоставления качественных услуг по их ремонту и обслуживанию. Вдохновленные идеей экологически чистого транспорта и инновациями в автомобильной промышленности, команда из профессионалов с многолетним опытом в автоиндустрии решила создать специализированный сервис, который удовлетворяет уникальные потребности владельцев электрокаров.</p>
-            <aside>
+        <article class="section__content">
+            <p class="section__paragraph">Наша автомастерская была основана в ответ на быстрорастущую популярность электромобилей и необходимость предоставления качественных услуг по их ремонту и обслуживанию. Вдохновленные идеей экологически чистого транспорта и инновациями в автомобильной промышленности, команда из профессионалов с многолетним опытом в автоиндустрии решила создать специализированный сервис, который удовлетворяет уникальные потребности владельцев электрокаров.</p>
+            <aside class="section__aside">
                 Первая автомастерская открылась <em>в 2011</em> году на краю города и занимала <em>30 м<sup>2</sup>.</em>
             </aside>
-            <p>Постепенно расширяя перечень услуг, от ремонта батарей и электродвигателей до установки зарядных станций. Сегодня мы гордимся тем, что стали надежным партнером для наших клиентов, обеспечивая высокий уровень сервиса и долгосрочное качество работы.</p>
-       </article>
-        <h4>Награды</h4>
-        <ol>
-            <li>"Золотая Батарея" 2016</li>
-            <li>"Эко-Прорыв Года" 2018</li>
-            <li>"Электро-Профи" 2023</li>
-        </ol>
-        <h4>Формула успеха</h4>
-        <p>БЫСТРОТА<sub>обслуживания</sub> + ДОСТУПНОСТЬ<sub>цен</sub> = УДОВЛЕТВОРЕННОСТЬ КЛИЕНТА</p>
+            <p class="section__paragraph">Постепенно расширяя перечень услуг, от ремонта батарей и электродвигателей до установки зарядных станций. Сегодня мы гордимся тем, что стали надежным партнером для наших клиентов, обеспечивая высокий уровень сервиса и долгосрочное качество работы.</p>
+        </article>
+        <h4 class="section__subtitle">Награды</h4>
+        <div class="section__list">
+            <ol class="list list_ordered">
+                <li class="list__item">"Золотая Батарея" 2016</li>
+                <li class="list__item">"Эко-Прорыв Года" 2018</li>
+                <li class="list__item">"Электро-Профи" 2023</li>
+            </ol>
+        </div>
+        <h4 class="section__subtitle">Формула успеха</h4>
+        <p class="section__paragraph">БЫСТРОТА<sub>обслуживания</sub> + ДОСТУПНОСТЬ<sub>цен</sub> = УДОВЛЕТВОРЕННОСТЬ КЛИЕНТА</p>
     </section>
 
-    <section id="services" class="information-block">
-        <h2>Услуги</h2>
-        <ul>
-            <li>
-                <p><b>Замена батареи</b></p>
-                <p><i>Быстрая замена аккумуляторных блоков</i></p>
-                <p><ins>4999</ins> <del>9999</del> рублей</p>
-            </li>
-            <li>
-                <p><b>Ремонт двигателя</b></p>
-                <p><i>Восстановление электродвигателей для электромобилей</i></p>
-                <p><ins>9999</ins> <del>29999</del> рублей</p>
-            </li>
-            <li>
-                <p><b>Обновление программного обеспечения</b></p>
-                <p><i> Установка последней версии ПО</i></p>
-                <p><ins>999</ins> <del>999</del> рублей</p>
-            </li>
-            <li>
-                <p><b>Установка дополнительного оборудования </b><strong>(Записываться заранее по телефону)</strong></p>
-                <p><i>Монтаж аксессуаров и опций электромобиля</i></p>
-                <p><ins>Цена договорная</ins></p>
-            </li>
-        </ul>
+    <section class="section section_titled-services" id="services">
+        <h2 class="section__title">Услуги</h2>
+        <div class="section__list">
+            <ul class="list list_unordered">
+                <li class="list__item">
+                    <div class=service>
+                        <p class="service__name"><b>Замена батареи</b></p>
+                        <p class="service__description"><i>Быстрая замена аккумуляторных блоков</i></p>
+                        <p class="service__price"><ins>4999</ins> <del>9999</del> рублей</p>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class=service>
+                        <p class="service__name"><b>Ремонт двигателя</b></p>
+                        <p class="service__description"><i>Восстановление электродвигателей для электромобилей</i></p>
+                        <p class="service__price"><ins>9999</ins> <del>29999</del> рублей</p>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class=service>
+                        <p class="service__name"><b>Обновление программного обеспечения</b></p>
+                        <p class="service__description"><i> Установка последней версии ПО</i></p>
+                        <p class="service__price"><ins>999</ins> <del>999</del> рублей</p>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class=service>
+                        <p class="service__name"><b>Установка дополнительного оборудования </b><strong>(Записываться заранее по телефону)</strong></p>
+                        <p class="service__description"><i>Монтаж аксессуаров и опций электромобиля</i></p>
+                        <p class="service__price"><ins>Цена договорная</ins></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section id="staff" class="information-block">
-        <h2>Сотрудники</h2>
-        <ul>
-            <li>
-                <p><b>Иванов Иван Иванович</b></p>
-                <p><i>Специалист по работе с софтом</i></p>
-            </li>
-            <li>
-                <p><b>Петров Петр Петрович</b></p>
-                <p><i>Механик</i></p>
-            </li>
-            <li>
-                <p><b>Николаев Николай Николаевич</b></p>
-                <p><i>Специалист по аккумуляторам</i></p>
-            </li>
-        </ul>
+    <section class="section section_titled-staff" id="staff">
+        <h2 class="section__title">Сотрудники</h2>
+        <div class="section__list">
+            <ul class="list list_unordered">
+                <li class="list__item">
+                    <div class=staff>
+                        <p class="staff__name"><b>Иванов Иван Иванович</b></p>
+                        <p class="staff__role"><i>Специалист по работе с софтом</i></p>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class=staff>
+                        <p class="staff__name"><b>Петров Петр Петрович</b></p>
+                        <p class="staff__role"><i>Механик</i></p>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class=staff>
+                        <p class="staff__name"><b>Николаев Николай Николаевич</b></p>
+                        <p class="staff__role"><i>Специалист по аккумуляторам</i></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section id="contacts" class="information-block">
-        <h2>Как с нами связаться</h2>
-        <ul>
-            <li>
-                <p><b>Телефон:</b> +7 (999) 223-34-44</p>
-            </li>
-            <li>
-                <p><b>Электронная почта:</b> care@yandex.ru</p>
-            </li>
-            <li>
-                <p><b>Телеграм:</b> @careofficial</p>
-            </li>
-        </ul>
+    <section class="section section_titled-contacts" id="contacts">
+        <h2 class="section__title">Как с нами связаться</h2>
+        <div class="section__list">
+            <ul class="list list_unordered">
+                <li class="list__item">
+                    <div class="contact-info">
+                        <p class="contact-info__unit"><b>Телефон:</b> +7 (999) 223-34-44</p>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="contact-info">
+                        <p class="contact-info__unit"><b>Электронная почта:</b> care@yandex.ru</p>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="contact-info">
+                        <p class="contact-info__unit"><b>Телеграм:</b> @careofficial</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section id="art" class="information-block">
-        <h2>Искусство</h2>
-        <h3>Ваш автомобиль после посещения нашей мастерской:</h3>
-        <pre>
+    <section class="section section_titled-art" id="art">
+        <h2 class="section__title">Искусство</h2>
+        <h3 class="section__subtitle">Ваш автомобиль после посещения нашей мастерской:</h3>
+        <div class="section__preformatted-element">
+            <pre class="section__ascii">
                  ____----------- _____
    \~~~~~~~~~~/~_--~~~------~~~~~     \
     `---`\  _-~      |                   \
-      _-~  <_         |                     \\>
+      _-~  <_         |                     \\
     / ___     ~~--[""] |      ________-------'_
    > /~` \    |-.   `\~~.~~~~~                _ ~ - _
     ~|  ||\%  |       |    ~  ._                ~ _   ~ ._
@@ -127,25 +162,26 @@
                       ~~-/._<   \ \`~~~~~~~~~~~~~     ##--~/
                             \    ) |`------##---~~~~-~  ) )
                              ~-_/_/                  ~~ ~~
-        </pre>
+            </pre>
+        </div>
     </section>
 
-    <section id="api" class="information-block">
-        <h2>Пример кода для работы с API:</h2>
-        <pre>
-<code>
+    <section class="section section_titled-api" id="api">
+        <h2 class="section__title">Пример кода для работы с API:</h2>
+        <div class="section__preformatted-element">
+            <pre class="section__code"><code>
 @PostMapping("/create")
 public CarDTO create(@Valid @RequestBody CarDTO car) {
     return (CarDTO) rabbitTemplate.convertSendAndReceive("createCarQueue", car);
 }
-</code>
-        </pre>
+            </code></pre>
+        </div>
     </section>
 </main>
 
-<footer>
-    <p>г. Санкт-Петербург, Вяземский п-к, д. 5-7</p>
-    <p>&copy; 2024 Электро-автомастерская CARe</p>
+<footer class="footer">
+    <p class="footer__text">г. Санкт-Петербург, Вяземский п-к, д. 5-7</p>
+    <p class="footer__text">&copy; 2024 Электро-автомастерская CARe</p>
 </footer>
 
 <script src="main.js"></script>

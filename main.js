@@ -9,12 +9,12 @@ window.onload = function() {
         behavior: "smooth",
     });
 
-    setTimeout(() => {
-        logoBlock.style.height = '20vh';
-        logoBlock.style.marginBottom = '5vh';
-
-        logoImg.style.height = '60vh';
-
-        html.style.overflowY = 'auto';
-    }, 500);
+    // setTimeout(() => {
+    //     logoBlock.style.height = '20vh';
+    //     logoBlock.style.marginBottom = '5vh';
+    //
+    //     logoImg.style.height = '60vh';
+    //
+    //     html.style.overflowY = 'auto';
+    // }, 500);
 };

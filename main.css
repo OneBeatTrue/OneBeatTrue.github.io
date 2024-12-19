@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'TTTravels';
     src:    url('fonts/TTTravelsRegular.ttf') format('truetype'),
-            url('fonts/TTTravelsItalic.ttf') format('truetype'),
-            url('fonts/TTTravelsBold.ttf') format('truetype'),
-            url('fonts/TTTravelsDemiBold.ttf') format('truetype');
+    url('fonts/TTTravelsItalic.ttf') format('truetype'),
+    url('fonts/TTTravelsBold.ttf') format('truetype'),
+    url('fonts/TTTravelsDemiBold.ttf') format('truetype');
 }
 
 html {
     scroll-behavior: smooth;
     background-color: rgb(105, 105, 105, 0.1);
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
     transition: all 0.5s ease;
 }
 
@@ -20,35 +20,34 @@ body {
     padding: 5vh;
 }
 
-footer {
+.footer {
     font-family: 'TTTravels', sans-serif;
     margin: 0;
     padding: 5vh;
     text-align: right;
 }
 
-
-#logo {
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 20vh;
     width: auto;
-    border-radius: 0 0 0 0;
+    border-radius: 0;
     padding: 0;
-    margin-bottom: 0;
+    margin-bottom: 5vh;
     transition: all 0.5s ease;
 }
 
-#logo img {
-    height: 100vh;
+.logo__img {
+    height: 60vh;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
     transition: all 0.5s ease;
 }
 
-#main-nav {
+.nav {
     background-color: white;
     height: 8vh;
     padding: 1vh;
@@ -61,11 +60,11 @@ footer {
     box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
 }
 
-#main-nav::-webkit-scrollbar {
+.nav::-webkit-scrollbar {
     display: none;
 }
 
-.horizontal-menu {
+.menu {
     padding: 0;
     margin: 0;
     height: 100%;
@@ -75,7 +74,7 @@ footer {
     align-items: center;
 }
 
-.horizontal-menu li {
+.menu_horizontal .menu__item {
     display: inline-block;
     padding: 2vh 4vh;
     height: 50%;
@@ -85,16 +84,16 @@ footer {
     background-color: rgb(105, 105, 105);
 }
 
-.horizontal-menu li:last-child {
+.menu_horizontal .menu__item:last-child {
     margin-right: 1vh;
 }
 
-.horizontal-menu li:hover {
+.menu_horizontal .menu__item:hover {
     background-color: rgba(0, 230, 95);
     box-shadow: 0 0 6vh rgba(0, 230, 95, 0.5);
 }
 
-.horizontal-menu a {
+.menu__link {
     font-weight: bold;
     text-decoration: none;
     font-size: 3vh;
@@ -105,7 +104,7 @@ footer {
     white-space: nowrap;
 }
 
-.information-block {
+.section {
     background-color: white;
     border-radius: 6vh;
     padding: 5vh;
@@ -113,38 +112,102 @@ footer {
     box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
 }
 
-.information-block h2 {
+.section__title {
     font-size: 24px;
     margin-top: 10px;
     margin-bottom: 10px;
     color: rgb(0, 230, 95);
 }
 
-.information-block h2:first-child {
+.section__title:first-child {
     margin-top: 0;
 }
 
-.information-block p {
+.section__paragraph {
     font-size: 16px;
     line-height: 1.5;
     color: rgb(105, 105, 105);
 }
 
-.information-block strong {
+.section__subtitle {
     font-weight: bold;
-    letter-spacing: 2px;
     word-spacing: 5px;
-    text-transform: uppercase;
-    color: rgba(0, 230, 95, 1);
+    color: black;
 }
 
-.information-block blockquote {
+.section__quote {
     text-align: right;
 }
 
-.information-block pre {
-    font-family: "Courier New", monospace;
+.list {
+    list-style: none;
+    margin: 0;
+}
+
+.list_ordered {
+    list-style-type: decimal;
+}
+
+.list_unordered {
+    list-style-type: disc;
+}
+
+.list__item {
+    margin-top: 0;
+}
+
+.service {
+    padding: 10px;
+}
+
+.service__name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0;
+    color: rgb(105, 105, 105);
+}
+
+.service__description {
+    font-style: italic;
     font-size: 16px;
+    color: gray;
+}
+
+.service__price {
+    font-size: 16px;
+    color: gray;
+}
+
+.staff {
+    padding: 10px;
+}
+
+.staff__name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0;
+    color: rgb(105, 105, 105);
+}
+
+.staff__role {
+    font-style: italic;
+    font-size: 16px;
+    color: gray;
+}
+
+.contact-info {
+    margin-top: 0;
+    padding: 10px;
+    color: rgb(105, 105, 105);
+}
+
+.contact-info__unit {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.section__preformatted-element {
     background-color: rgb(105, 105, 105, 0.1);
     padding: 10px;
     border: 1px solid black;
