@@ -392,3 +392,7 @@ tbody tr:nth-child(odd) {
 .feedback-form label {
     display: none;
 }
+
+.feedback-container__feedback {
+    margin: 0 0 5vh 0;
+}
