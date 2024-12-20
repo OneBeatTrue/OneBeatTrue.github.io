@@ -43,14 +43,14 @@ body {
 
 .logo_fixed {
     background-color: white;
-    border-radius: 6vh;
+    border-radius: 0 0 0 6vh;
     padding: 1vh;
     margin: 0;
     box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
     height: 10vh;
     position: fixed;
     top: 0;
-    transform: translateX(-16%);
+    transform: translateX(+535%);
     z-index: 1000;
 }
 
@@ -103,7 +103,7 @@ body {
     background-color: rgb(105, 105, 105);
 }
 
-@media screen and (max-width: 60em) {
+@media screen and (max-aspect-ratio: 13/10) {
     .menu {
         padding: 0;
         margin: 0;
@@ -184,7 +184,7 @@ body {
     border: 1px solid black;
 }
 
-@media screen and (max-width: 100vh) {
+@media screen and (max-aspect-ratio: 9/10) {
     .section__preformatted-element {
         display: none;
     }
@@ -337,4 +337,58 @@ tbody tr:nth-child(even) {
 
 tbody tr:nth-child(odd) {
     background-color: rgb(105, 105, 105, 0.3);
+}
+
+.feedback-form {
+    font-family: TTTravels, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20vh 0 20vh 0;
+    transition: all 0.3s ease;
+}
+
+.feedback-form input[type="text"] {
+    font-family: TTTravels, sans-serif;
+    padding: 1.5vh;
+    margin: 1vh 0;
+    border: 1px solid rgba(105, 105, 105, 0.5);
+    border-radius: 4vh;
+    font-size: 2vh;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-form input[type="text"]:focus {
+    border-color: rgb(0, 230, 95);
+    box-shadow: 0 0 0.5vh rgba(0, 230, 95, 0.5);
+    outline: none;
+}
+
+.feedback-form button {
+    font-family: TTTravels, sans-serif;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    margin: 1vh 0;
+    font-size: 2.5vh;
+    font-weight: bold;
+    border: none;
+    border-radius: 4vh;
+    padding: 1.5vh 3vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: rgba(0, 230, 95);
+    box-shadow: 0 0 6vh rgba(0, 230, 95, 0.5);
+}
+
+.feedback-form button:active {
+    background-color: rgba(0, 180, 75);
+}
+
+.feedback-form label {
+    display: none;
 }

@@ -8,7 +8,7 @@ window.onload = function() {
 
 window.addEventListener('scroll', function () {
     const header = document.querySelector('.logo');
-    if (window.scrollY > 50) {
+    if (window.scrollY > 60) {
         header.classList.add('logo_fixed');
     } else {
         header.classList.remove('logo_fixed');
@@ -17,7 +17,7 @@ window.addEventListener('scroll', function () {
 
 (function () {
     window.addEventListener('load', function () {
-        const loadTime = performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart;
+        const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
         const footer = document.querySelector('footer'); // Находим подвал сайта
         const stats = document.createElement('p');
         stats.classList.add('footer__stats');

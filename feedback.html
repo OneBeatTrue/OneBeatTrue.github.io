@@ -10,17 +10,24 @@
     <link rel="icon" type="image/x-icon" sizes="96x96" href="img/favicon.ico">
     <script src="js/header.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/feedback.js"></script>
 </head>
 <body>
 <header class="header"></header>
 <main class="main">
-    <section class="section section_titled-form">
-        <h2 class="section__title">Оставить отзыв</h2>
-
-    </section>
+  <section class="section section_titled-form">
+    <h2 class="section__title">Оставить отзыв</h2>
+      <form class="feedback-form" id="feedbackForm">
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Имя" required>
+        <label for="feedback"></label>
+        <input type="text" id="feedback" name="feedback" placeholder="Отзыв" required>
+        <button type="submit">Оставить отзыв</button>
+      </form>
+  </section>
   <section class="section section_titled-feedback">
     <h2 class="section__title">Отзывы</h2>
-
+      <div class="feedback-container" id="feedbackContainer"></div>
   </section>
 </main>
 <footer class="footer">
