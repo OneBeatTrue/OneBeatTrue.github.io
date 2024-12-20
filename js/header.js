@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            const firstSection = document.querySelector('section:first-of-type');
-            firstSection.style.marginTop = '5vh';
+            const firstSection = document.querySelector('main');
+            firstSection.style.marginTop = '0';
         })
         .catch(error => {
             console.log(error);
