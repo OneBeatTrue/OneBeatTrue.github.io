@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="автомастерская, электромобили, ремонт электромобилей">
+    <meta name="description" content="Автомастерская электромобилей.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARe</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" sizes="96x96" href="img/favicon.ico">
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<header class="header"></header>
+<main class="main">
+    <section class="section section_titled-api" id="api">
+        <h2 class="section__title">Пример кода для работы с API:</h2>
+        <div class="section__preformatted-element">
+            <pre class="section__code"><code>
+@PostMapping("/create")
+public CarDTO create(@Valid @RequestBody CarDTO car) {
+    return (CarDTO) rabbitTemplate.convertSendAndReceive("createCarQueue", car);
+}
+            </code></pre>
+        </div>
+    </section>
+</main>
+<footer class="footer"></footer>
+</body>
+</html>

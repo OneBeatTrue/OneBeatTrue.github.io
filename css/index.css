@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'TTTravels';
-    src:    url('fonts/TTTravelsRegular.ttf') format('truetype'),
-    url('fonts/TTTravelsItalic.ttf') format('truetype'),
-    url('fonts/TTTravelsBold.ttf') format('truetype'),
-    url('fonts/TTTravelsDemiBold.ttf') format('truetype');
+    src:    url('../fonts/TTTravelsRegular.ttf') format('truetype'),
+    url('../fonts/TTTravelsItalic.ttf') format('truetype'),
+    url('../fonts/TTTravelsBold.ttf') format('truetype'),
+    url('../fonts/TTTravelsDemiBold.ttf') format('truetype');
 }
 
 html {
@@ -74,9 +74,9 @@ body {
     align-items: center;
 }
 
-.menu_horizontal .menu__item {
+.menu__item {
     display: inline-block;
-    padding: 2vh 4vh;
+    /*padding: 2vh 4vh;*/
     height: 50%;
     border-radius: 4vh;
     transition: background-color 0.3s, box-shadow 0.3s ease;
@@ -84,11 +84,15 @@ body {
     background-color: rgb(105, 105, 105);
 }
 
-.menu_horizontal .menu__item:last-child {
+.menu__item_active {
+    background-color: rgba(0, 230, 95);
+}
+
+.menu__item:last-child {
     margin-right: 1vh;
 }
 
-.menu_horizontal .menu__item:hover {
+.menu__item:hover {
     background-color: rgba(0, 230, 95);
     box-shadow: 0 0 6vh rgba(0, 230, 95, 0.5);
 }
@@ -102,6 +106,7 @@ body {
     justify-content: center;
     align-items: center;
     white-space: nowrap;
+    padding: 2vh 4vh;
 }
 
 .section {
@@ -110,6 +115,10 @@ body {
     padding: 5vh;
     margin: 5vh 0;
     box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
+}
+
+section:first-of-type {
+    margin-top: 60vh;
 }
 
 .section__title {
@@ -212,4 +221,59 @@ body {
     padding: 10px;
     border: 1px solid black;
     overflow-x: scroll;
+}
+
+.section__table {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.footer__stats {
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgb(105, 105, 105);
+}
+
+.table__header {
+    display: contents;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table__cell {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.table__row:nth-child(even) .table__cell {
+    background-color: rgba(0, 230, 95, 0.1); /* Чётные строки с зелёным фоном */
+}
+
+.table__row:nth-child(odd) .table__cell {
+    background-color: rgb(240, 240, 240); /* Нечётные строки с серым фоном */
+}
+
+.table__cell-header {
+    font-weight: bold;
+    background-color: rgb(0, 230, 95);
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .section__table {
+        grid-template-columns: 1fr; /* Одна колонка для малых экранов */
+    }
+
+    .table__header,
+    .table__row {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
