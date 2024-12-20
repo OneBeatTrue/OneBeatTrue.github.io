@@ -6,6 +6,15 @@ window.onload = function() {
     });
 };
 
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('.logo');
+    if (window.scrollY > 50) {
+        header.classList.add('logo_fixed');
+    } else {
+        header.classList.remove('logo_fixed');
+    }
+});
+
 (function () {
     window.addEventListener('load', function () {
         const loadTime = performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart;
@@ -18,13 +27,3 @@ window.onload = function() {
         }
     });
 })();
-
-window.addEventListener('scroll', function () {
-    const header = document.querySelector('.logo');
-    const thread_presence = document.querySelectorAll('.section__table');
-    if (window.scrollY > 50 && !thread_presence.length) {
-        header.classList.add('logo_fixed');
-    } else {
-        header.classList.remove('logo_fixed');
-    }
-});
