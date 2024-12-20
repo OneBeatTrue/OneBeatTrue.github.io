@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const menuItems = document.querySelectorAll('.menu__item');
             const currentPath = document.location.pathname;
-            const currentFile = currentPath.substring(currentPath.lastIndexOf('/') + 1);
+            const currentFile = currentPath.substring(currentPath.lastIndexOf('/') + 1) || "index.html";
             menuItems.forEach(item => {
                 const link = item.querySelector('.menu__link');
                 const linkHref = link.getAttribute('href');
