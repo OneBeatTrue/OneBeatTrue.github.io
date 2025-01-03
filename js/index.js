@@ -8,9 +8,10 @@ window.onload = function() {
 
 window.addEventListener('scroll', function () {
     const header = document.querySelector('.logo');
-    if (window.scrollY > 60) {
+    if (window.scrollY > 150) {
         header.classList.add('logo_fixed');
-    } else {
+    }
+    else {
         header.classList.remove('logo_fixed');
     }
 });
