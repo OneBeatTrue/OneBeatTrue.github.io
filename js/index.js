@@ -19,7 +19,7 @@ window.addEventListener('scroll', function () {
 (function () {
     window.addEventListener('load', function () {
         const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
-        const footer = document.querySelector('footer'); // Находим подвал сайта
+        const footer = document.querySelector('footer');
         const stats = document.createElement('p');
         stats.classList.add('footer__stats');
         stats.textContent = `Страница загружена за ${loadTime / 1000} с`;
